@@ -1,4 +1,5 @@
-ML_Healthcare
+# ML_Healthcare
+
 This is a website prepared using machine learning model to predict Covid-19 cases easily so that treatment can be made faster.
 
 Idea:
@@ -24,6 +25,7 @@ Difficulty Breathing –Categorical      -1/0/1 Binary
 Labels :
 Infection Probability of Covid-19
 
+
 Tech Stack:
 Bootstrap 
 Flask 
@@ -38,3 +40,4 @@ Future Plans:
 1-Presently Logistic Regression has been used.
 In real life we'll try for all models and see  which model gives best results and depending on that we use the model
 2-Real data can help in giving near to perfect predictions.
+2-Add About Us,Contact Us .

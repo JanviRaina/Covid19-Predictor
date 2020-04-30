@@ -25,13 +25,23 @@ def hello_world():
 
         return render_template('show.html',inf=round(infProb*100))
     return render_template('index.html')
-    # return "hello world"+ str(infProb)
 
 
+@app.route("/about")
+def about():
+    return render_template('about.html')
 
+@app.route("/contact")
+def contact():
+    return render_template('contact.html')
 
 
 if __name__ == "__main__":
     app.run(debug=True)
 
 
+
+#  removed comments
+#  added more features -> close history,foreign travel etc
+# contact page and aboout us?
+#  removed search
