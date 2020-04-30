@@ -3,7 +3,6 @@ import pickle
 
 app = Flask(__name__)
 
-
 file=open('model.pkl','rb')
 clf=pickle.load(file)
 file.close()
@@ -12,14 +11,15 @@ file.close()
 def hello_world():
     if request.method=='POST': 
         myDict=request.form
-        fever=int(myDict['fever'])
-        age=int(myDict['age'])
-        pain=int(myDict['pain'])
-        runnyNose=int(myDict['runnyNose'])
-        diffBreathe=int(myDict['diffbreath'])
+        has_fever=int(myDict['fever'])
+        person_age=int(myDict['age'])
+        body_pain=int(myDict['pain'])
+        runny_nose=int(myDict['runnyNose'])
+        difficult_Breathe=int(myDict['diffbreath'])
+        travelhistory=int(myDict['travelHistory'])
 
 
-        inputFeatures=[fever,pain,age,runnyNose,diffBreathe]
+        inputFeatures=[has_fever,body_pain,person_age,runny_nose,difficult_Breathe,travelhistory]
         infProb=clf.predict_proba([inputFeatures])[0][1]
         print(infProb)
 
@@ -40,8 +40,3 @@ if __name__ == "__main__":
     app.run(debug=True)
 
 
-
-#  removed comments
-#  added more features -> close history,foreign travel etc
-# contact page and aboout us?
-#  removed search
