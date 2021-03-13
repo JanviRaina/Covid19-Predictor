@@ -41,4 +41,4 @@ In real life we'll try for all models and see  which model gives best results an
 2-Real data can help in giving near to perfect predictions.
 2-Add About Us,Contact Us .(Done)
 
-![Block Diagram](images/covid.png)
+![Block Diagram](covid.png)
