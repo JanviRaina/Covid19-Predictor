@@ -40,3 +40,5 @@ Future Plans:
 In real life we'll try for all models and see  which model gives best results and depending on that we use the model
 2-Real data can help in giving near to perfect predictions.
 2-Add About Us,Contact Us .(Done)
+
+![Block Diagram](covid.png)
