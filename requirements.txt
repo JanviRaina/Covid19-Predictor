@@ -39,6 +39,6 @@ six==1.15.0
 sklearn==0.0
 torch==0.4.1
 ttkthemes==3.1.1
-urllib3==1.25.9
+urllib3==1.26.5
 Werkzeug==1.0.1
 XlsxWriter==1.2.9
