@@ -28,14 +28,3 @@ if __name__ == "__main__":
     file=open('model.pkl','wb')
     pickle.dump(clf,file)
     file.close()
-
-
-
-
-
-
-
-
-
-
-
